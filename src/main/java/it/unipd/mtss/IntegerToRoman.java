@@ -7,10 +7,17 @@ package it.unipd.mtss;
 import it.unipd.mtss.exception.InvalidNumber;
 
 public class IntegerToRoman {
+
+    private static final String[] migliaia = {"", "M"};
+    private static final String[] centinaia = {"", "C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM"};
+
     public static String convert(int number) throws InvalidNumber {
         validaArgomenti(number);
 
-        return null;
+        int n_centinaia = (number/100)%10;
+        int n_migliaia = (number/1000)%10;
+
+        return migliaia[n_migliaia] + centinaia[n_centinaia];
     }
 
     private static void validaArgomenti(int number) throws InvalidNumber{
