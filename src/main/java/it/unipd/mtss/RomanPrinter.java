@@ -15,6 +15,10 @@ public class RomanPrinter {
         String[] i=ii.split("\n");
         String[] v=vv.split("\n");
         String[] x=xx.split("\n");
+        String[] l=ll.split("\n");
+        String[] c=cc.split("\n");
+        String[] d=dd.split("\n");
+        String[] m=mm.split("\n");
 
         String risultato="";
         String[][] lettere_da_inserire=new String[romanNumber.length()][11];
@@ -27,8 +31,20 @@ public class RomanPrinter {
             else if(romanN[j] == 'V'){
                 lettere_da_inserire[j] = v;
             }
-            else{
+            else if(romanN[j] == 'X'){
                 lettere_da_inserire[j] = x;
+            }
+            else if(romanN[j] == 'L'){
+                lettere_da_inserire[j] = l;
+            }
+            else if(romanN[j] == 'C'){
+                lettere_da_inserire[j] = c;
+            }
+            else if(romanN[j] == 'D'){
+                lettere_da_inserire[j] = d;
+            }
+            else{
+                lettere_da_inserire[j] = m;
             }
         }
 
@@ -80,5 +96,57 @@ public class RomanPrinter {
                     "  .8'  `8.`8888.   \n" +
                     " .8'    `8.`8888.  \n" +
                     ".8'      `8.`8888. ";
+
+    private static final String ll =
+            "               \n" +
+                    "8 8888         \n" +
+                    "8 8888         \n" +
+                    "8 8888         \n" +
+                    "8 8888         \n" +
+                    "8 8888         \n" +
+                    "8 8888         \n" +
+                    "8 8888         \n" +
+                    "8 8888         \n" +
+                    "8 8888         \n" +
+                    "8 888888888888 ";
+
+    private static final String cc =
+            "                  \n" +
+                    "    ,o888888o.    \n" +
+                    "   8888     `88.  \n" +
+                    ",8 8888       `8. \n" +
+                    "88 8888           \n" +
+                    "88 8888           \n" +
+                    "88 8888           \n" +
+                    "88 8888           \n" +
+                    "`8 8888       .8' \n" +
+                    "   8888     ,88'  \n" +
+                    "    `8888888P'    ";
+
+    private static final String dd =
+            "                   \n" +
+                    "8 888888888o.      \n" +
+                    "8 8888    `^888.   \n" +
+                    "8 8888        `88. \n" +
+                    "8 8888         `88 \n" +
+                    "8 8888          88 \n" +
+                    "8 8888          88 \n" +
+                    "8 8888         ,88 \n" +
+                    "8 8888        ,88' \n" +
+                    "8 8888    ,o88P'   \n" +
+                    "8 888888888P'      ";
+
+    private static final String mm =
+            "          .         .           \n" +
+                    "         ,8.       ,8.          \n" +
+                    "        ,888.     ,888.         \n" +
+                    "       .`8888.   .`8888.        \n" +
+                    "      ,8.`8888. ,8.`8888.       \n" +
+                    "     ,8'8.`8888,8^8.`8888.      \n" +
+                    "    ,8' `8.`8888' `8.`8888.     \n" +
+                    "   ,8'   `8.`88'   `8.`8888.    \n" +
+                    "  ,8'     `8.`'     `8.`8888.   \n" +
+                    " ,8'       `8        `8.`8888.  \n" +
+                    ",8'         `         `8.`8888. ";
 
 }
