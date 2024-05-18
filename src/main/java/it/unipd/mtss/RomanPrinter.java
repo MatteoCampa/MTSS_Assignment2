@@ -7,7 +7,7 @@ package it.unipd.mtss;
 import it.unipd.mtss.exception.InvalidNumber;
 
 public class RomanPrinter {
-    public static String print(int num){
+    public static String print(int num) throws InvalidNumber {
         return printAsciiArt(IntegerToRoman.convert(num));
     }
 

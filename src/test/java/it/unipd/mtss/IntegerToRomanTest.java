@@ -16,9 +16,37 @@ public class IntegerToRomanTest{
         integerToRoman = new IntegerToRoman();
     }
 
-    @Test
-    public void test(){
-        assertTrue(true);
+    @Test(expected = InvalidNumber.class)
+    public void testConvert_Zero() throws InvalidNumber {
+        try{
+            integerToRoman.convert(0);
+        }
+        catch (InvalidNumber e){
+            assertEquals("Numero Troppo Piccolo",e.getMessage());
+            throw e;
+        }
+    }
+
+    @Test(expected = InvalidNumber.class)
+    public void testConvert_ToLow() throws InvalidNumber {
+        try{
+            integerToRoman.convert(-1);
+        }
+        catch (InvalidNumber e){
+            assertEquals("Numero Troppo Piccolo",e.getMessage());
+            throw e;
+        }
+    }
+
+    @Test(expected = InvalidNumber.class)
+    public void testConvert_ToHigh() throws InvalidNumber {
+        try{
+            integerToRoman.convert(1001);
+        }
+        catch (InvalidNumber e){
+            assertEquals("Numero Troppo Grande",e.getMessage());
+            throw e;
+        }
     }
 
 }
