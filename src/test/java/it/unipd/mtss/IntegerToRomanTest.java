@@ -50,53 +50,58 @@ public class IntegerToRomanTest{
     }
 
     @Test
+    public void testConvert_First() throws InvalidNumber {
+        assertEquals("I", integerToRoman.convert(1));
+    }
+
+    @Test
     public void testConvert_Last() throws InvalidNumber {
         assertEquals("M", integerToRoman.convert(1000));
     }
 
     @Test
-    public void testConvert_One() throws InvalidNumber {
-        assertEquals("C", integerToRoman.convert(100));
+    public void testConvert_Ones() throws InvalidNumber {
+        assertEquals("CXI", integerToRoman.convert(111));
     }
 
     @Test
-    public void testConvert_Two() throws InvalidNumber {
-        assertEquals("CC", integerToRoman.convert(200));
+    public void testConvert_Twos() throws InvalidNumber {
+        assertEquals("CCXXII", integerToRoman.convert(222));
     }
 
     @Test
-    public void testConvert_Three() throws InvalidNumber {
-        assertEquals("CCC", integerToRoman.convert(300));
+    public void testConvert_Threes() throws InvalidNumber {
+        assertEquals("CCCXXXIII", integerToRoman.convert(333));
     }
 
     @Test
-    public void testConvert_Four() throws InvalidNumber {
-        assertEquals("CD", integerToRoman.convert(400));
+    public void testConvert_Fours() throws InvalidNumber {
+        assertEquals("CDXLIV", integerToRoman.convert(444));
     }
 
     @Test
-    public void testConvert_Five() throws InvalidNumber {
-        assertEquals("D", integerToRoman.convert(500));
+    public void testConvert_Fives() throws InvalidNumber {
+        assertEquals("DLV", integerToRoman.convert(555));
     }
 
     @Test
-    public void testConvert_Six() throws InvalidNumber {
-        assertEquals("DC", integerToRoman.convert(600));
+    public void testConvert_Sixes() throws InvalidNumber {
+        assertEquals("DCLXVI", integerToRoman.convert(666));
     }
 
     @Test
-    public void testConvert_Seven() throws InvalidNumber {
-        assertEquals("DCC", integerToRoman.convert(700));
+    public void testConvert_Sevens() throws InvalidNumber {
+        assertEquals("DCCLXXVII", integerToRoman.convert(777));
     }
 
     @Test
-    public void testConvert_Eight() throws InvalidNumber {
-        assertEquals("DCCC", integerToRoman.convert(800));
+    public void testConvert_Eights() throws InvalidNumber {
+        assertEquals("DCCCLXXXVIII", integerToRoman.convert(888));
     }
 
     @Test
-    public void testConvert_Nine() throws InvalidNumber {
-        assertEquals("CM", integerToRoman.convert(900));
+    public void testConvert_Nines() throws InvalidNumber {
+        assertEquals("CMXCIX", integerToRoman.convert(999));
     }
 
 }
