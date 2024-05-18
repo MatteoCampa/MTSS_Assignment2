@@ -49,4 +49,49 @@ public class IntegerToRomanTest{
         }
     }
 
+    @Test
+    public void testConvert_One() throws InvalidNumber {
+        assertEquals("I", integerToRoman.convert(1));
+    }
+
+    @Test
+    public void testConvert_Two() throws InvalidNumber {
+        assertEquals("II", integerToRoman.convert(2));
+    }
+
+    @Test
+    public void testConvert_Three() throws InvalidNumber {
+        assertEquals("III", integerToRoman.convert(3));
+    }
+
+    @Test
+    public void testConvert_Four() throws InvalidNumber {
+        assertEquals("IV", integerToRoman.convert(4));
+    }
+
+    @Test
+    public void testConvert_Five() throws InvalidNumber {
+        assertEquals("V", integerToRoman.convert(5));
+    }
+
+    @Test
+    public void testConvert_Six() throws InvalidNumber {
+        assertEquals("VI", integerToRoman.convert(6));
+    }
+
+    @Test
+    public void testConvert_Seven() throws InvalidNumber {
+        assertEquals("VII", integerToRoman.convert(7));
+    }
+
+    @Test
+    public void testConvert_Eight() throws InvalidNumber {
+        assertEquals("VIII", integerToRoman.convert(8));
+    }
+
+    @Test
+    public void testConvert_Nine() throws InvalidNumber {
+        assertEquals("IX", integerToRoman.convert(9));
+    }
+
 }

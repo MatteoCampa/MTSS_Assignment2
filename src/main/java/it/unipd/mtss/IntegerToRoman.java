@@ -7,10 +7,15 @@ package it.unipd.mtss;
 import it.unipd.mtss.exception.InvalidNumber;
 
 public class IntegerToRoman {
+
+    private static final String[] unita = {"", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"};
+
     public static String convert(int number) throws InvalidNumber {
         validaArgomenti(number);
 
-        return null;
+        int n_unita = number%10;
+
+        return unita[n_unita];
     }
 
     private static void validaArgomenti(int number) throws InvalidNumber{
