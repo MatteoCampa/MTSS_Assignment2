@@ -50,48 +50,58 @@ public class IntegerToRomanTest{
     }
 
     @Test
+    public void testConvert_First() throws InvalidNumber {
+        assertEquals("I", integerToRoman.convert(1));
+    }
+
+    @Test
+    public void testConvert_Last() throws InvalidNumber {
+        assertEquals("M", integerToRoman.convert(1000));
+    }
+
+    @Test
     public void testConvert_Ones() throws InvalidNumber {
-        assertEquals("XI", integerToRoman.convert(11));
+        assertEquals("CXI", integerToRoman.convert(111));
     }
 
     @Test
     public void testConvert_Twos() throws InvalidNumber {
-        assertEquals("XXII", integerToRoman.convert(22));
+        assertEquals("CCXXII", integerToRoman.convert(222));
     }
 
     @Test
     public void testConvert_Threes() throws InvalidNumber {
-        assertEquals("XXXIII", integerToRoman.convert(33));
+        assertEquals("CCCXXXIII", integerToRoman.convert(333));
     }
 
     @Test
     public void testConvert_Fours() throws InvalidNumber {
-        assertEquals("XLIV", integerToRoman.convert(44));
+        assertEquals("CDXLIV", integerToRoman.convert(444));
     }
 
     @Test
     public void testConvert_Fives() throws InvalidNumber {
-        assertEquals("LV", integerToRoman.convert(55));
+        assertEquals("DLV", integerToRoman.convert(555));
     }
 
     @Test
     public void testConvert_Sixes() throws InvalidNumber {
-        assertEquals("LXVI", integerToRoman.convert(66));
+        assertEquals("DCLXVI", integerToRoman.convert(666));
     }
 
     @Test
     public void testConvert_Sevens() throws InvalidNumber {
-        assertEquals("LXXVII", integerToRoman.convert(77));
+        assertEquals("DCCLXXVII", integerToRoman.convert(777));
     }
 
     @Test
     public void testConvert_Eights() throws InvalidNumber {
-        assertEquals("LXXXVIII", integerToRoman.convert(88));
+        assertEquals("DCCCLXXXVIII", integerToRoman.convert(888));
     }
 
     @Test
     public void testConvert_Nines() throws InvalidNumber {
-        assertEquals("XCIX", integerToRoman.convert(99));
+        assertEquals("CMXCIX", integerToRoman.convert(999));
     }
 
 }
