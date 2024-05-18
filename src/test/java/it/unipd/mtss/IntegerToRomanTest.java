@@ -50,48 +50,48 @@ public class IntegerToRomanTest{
     }
 
     @Test
-    public void testConvert_One() throws InvalidNumber {
-        assertEquals("I", integerToRoman.convert(1));
+    public void testConvert_Ones() throws InvalidNumber {
+        assertEquals("XI", integerToRoman.convert(11));
     }
 
     @Test
-    public void testConvert_Two() throws InvalidNumber {
-        assertEquals("II", integerToRoman.convert(2));
+    public void testConvert_Twos() throws InvalidNumber {
+        assertEquals("XXII", integerToRoman.convert(22));
     }
 
     @Test
-    public void testConvert_Three() throws InvalidNumber {
-        assertEquals("III", integerToRoman.convert(3));
+    public void testConvert_Threes() throws InvalidNumber {
+        assertEquals("XXXIII", integerToRoman.convert(33));
     }
 
     @Test
-    public void testConvert_Four() throws InvalidNumber {
-        assertEquals("IV", integerToRoman.convert(4));
+    public void testConvert_Fours() throws InvalidNumber {
+        assertEquals("XLIV", integerToRoman.convert(44));
     }
 
     @Test
-    public void testConvert_Five() throws InvalidNumber {
-        assertEquals("V", integerToRoman.convert(5));
+    public void testConvert_Fives() throws InvalidNumber {
+        assertEquals("LV", integerToRoman.convert(55));
     }
 
     @Test
-    public void testConvert_Six() throws InvalidNumber {
-        assertEquals("VI", integerToRoman.convert(6));
+    public void testConvert_Sixes() throws InvalidNumber {
+        assertEquals("LXVI", integerToRoman.convert(66));
     }
 
     @Test
-    public void testConvert_Seven() throws InvalidNumber {
-        assertEquals("VII", integerToRoman.convert(7));
+    public void testConvert_Sevens() throws InvalidNumber {
+        assertEquals("LXXVII", integerToRoman.convert(77));
     }
 
     @Test
-    public void testConvert_Eight() throws InvalidNumber {
-        assertEquals("VIII", integerToRoman.convert(8));
+    public void testConvert_Eights() throws InvalidNumber {
+        assertEquals("LXXXVIII", integerToRoman.convert(88));
     }
 
     @Test
-    public void testConvert_Nine() throws InvalidNumber {
-        assertEquals("IX", integerToRoman.convert(9));
+    public void testConvert_Nines() throws InvalidNumber {
+        assertEquals("XCIX", integerToRoman.convert(99));
     }
 
 }
